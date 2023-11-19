@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+
+
+/* Page Body Styles */
+
+div#home1 {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+div#home2 {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+div#home3 {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+
+

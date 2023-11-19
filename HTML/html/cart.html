@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaBeans | Shopping Cart</title>
+    <link href="../css/index.css" rel="stylesheet" />
+    <link href="../css/cart.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="../js/cart.js" defer></script>
+</head>
+ 
+<body>
+    <header>
+        <nav>
+            <ul id="std">
+                <li><a href="../html/index.html"><img src="../img/logo.png" alt="logo"></a></li>
+                <li><a href="../html/menu.html">MENU</a></li>
+                <li><a href="../html/faq.html">FAQ</a></li>
+                <li><a href="../html/aboutus.html">ABOUT US</a></li>
+                <li><a href="../html/membership.html" ><i class="fa fa-user-o" aria-hidden="true"></i></a></li>
+                <li><a href="../html/cart.html"><img src="../img/cart.png" alt="cart"></a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="cart-page"> <!--https://www.youtube.com/watch?v=oXrlgOEiy6o-->
+        <p><i class="fa fa-shopping-basket"></i>&nbsp;Shopping Cart&nbsp;<i class="fa fa-shopping-basket"></i></p>
+        <table class="cart-table">
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Total</th>
+            </tr>
+            <tr class="cart-row">
+                <td>
+                    <div class="cart-item">
+                        <img src="../img/DalgonaCoffee.jpg" alt="Dalgona Coffee" />
+                        <div id="item1">
+                            <p>Dalgona Coffee</p>
+                            <small class="price-label">Price: RM6.99</small>
+                            <button class="btn btn-remove" type="button">Remove</button>
+                        </div>
+                    </div>
+                </td>
+                <td><input class="cart-quantity-input" type="number" min="0" max="9" value="0"></td>
+                <td class="item-price">RM00.00</td>
+            </tr>
+            <tr class="cart-row">
+                <td>
+                    <div class="cart-item">
+                        <img src="../img/VeganFrappucino.jpg" alt="Vegan Frappucino" />
+                        <div id="item2">
+                            <p>Vegan Frappucino</p>
+                            <small class="price-label">Price: RM6.99</small>
+                            <button class="btn btn-remove" type="button">Remove</button>
+                        </div>
+                    </div>
+                </td>
+                <td><input class="cart-quantity-input" type="number" min="0" max="9" value="0"></td>
+                <td class="item-price">RM00.00</td>
+            </tr>
+            <tr class="cart-row">
+                <td>
+                    <div class="cart-item">
+                        <img src="../img/Cappuccino.jpg" alt="Cappuccino" />
+                        <div id="item3">
+                            <p>Cappuccino</p>
+                            <small class="price-label">Price: RM6.99</small>
+                            <button class="btn btn-remove" type="button">Remove</button>
+                        </div>
+                    </div>
+                </td>
+                <td><input class="cart-quantity-input" type="number" min="0" max="9" value="0"></td>
+                <td class="item-price">RM00.00</td>
+            </tr>
+            <tr class="cart-row">
+                <td>
+                    <div class="cart-item">
+                        <img src="../img/GreekFrappe.jpg" alt="Greek Frappe" />
+                        <div id="item4">
+                            <p>Greek Frappe</p>
+                            <small class="price-label">Price: RM6.99</small>
+                            <button class="btn btn-remove" type="button">Remove</button>
+                        </div>
+                    </div>
+                </td>
+                <td><input class="cart-quantity-input" type="number" min="0" max="9" value="0"></td>
+                <td class="item-price">RM00.00</td>
+            </tr>
+            <tr class="cart-row">
+                <td>
+                    <div class="cart-item">
+                        <img src="../img/Americano.jpg" alt="Americano" />
+                        <div id="item5">
+                            <p>Americano</p>
+                            <small class="price-label">Price: RM6.99</small>
+                            <button class="btn btn-remove" type="button">Remove</button>
+                        </div>
+                    </div>
+                </td>
+                <td><input class="cart-quantity-input" type="number" min="0" max="9" value="0"></td>
+                <td class="item-price">RM00.00</td>
+            </tr>
+            <tr class="cart-row">
+                <td>
+                    <div class="cart-item">
+                        <img src="../img/Milo Dinosaur.jpg" alt="Milo Dinosaur" />
+                        <div id="item6">
+                            <p>Milo Dinosaur</p>
+                            <small class="price-label">Price: RM6.99</small>
+                            <button class="btn btn-remove" type="button">Remove</button>
+                        </div>
+                    </div>
+                </td>
+                <td><input class="cart-quantity-input" type="number" min="0" max="9" value="0"></td>
+                <td class="item-price">RM00.00</td>
+            </tr><tr class="cart-row">
+                <td>
+                    <div class="cart-item">
+                        <img src="../img/caramel.jpg" alt="Caramel" />
+                        <div id="item7">
+                            <p>Caramel Macchiato</p>
+                            <small class="price-label">Price: RM6.99</small>
+                            <button class="btn btn-remove" type="button">Remove</button>
+                        </div>
+                    </div>
+                </td>
+                <td><input class="cart-quantity-input" type="number" min="0" max="9" value="0"></td>
+                <td class="item-price">RM00.00</td>
+            </tr><tr class="cart-row">
+                <td>
+                    <div class="cart-item">
+                        <img src="../img/hot chocolate.png" alt="chocolate" />
+                        <div id="item8">
+                            <p>Chocolate</p>
+                            <small class="price-label">Price: RM6.99</small>
+                            <button class="btn btn-remove" type="button">Remove</button>
+                        </div>
+                    </div>
+                </td>
+                <td><input class="cart-quantity-input" type="number" min="0" max="9" value="0"></td>
+                <td class="item-price">RM00.00</td>
+            </tr><tr class="cart-row">
+                <td>
+                    <div class="cart-item">
+                        <img src="../img/espresso.jpg" alt="espresso" />
+                        <div id="item9">
+                            <p>Espresso</p>
+                            <small class="price-label">Price: RM6.99</small>
+                            <button class="btn btn-remove" type="button">Remove</button>
+                        </div>
+                    </div>
+                </td>
+                <td><input class="cart-quantity-input" type="number" min="0" max="9" value="0"></td>
+                <td class="item-price">RM00.00</td>
+            </tr><tr class="cart-row">
+                <td>
+                    <div class="cart-item">
+                        <img src="../img/irish coffee.jpg" alt="irish coffee" />
+                        <div id="item10">
+                            <p>Irish Coffee</p>
+                            <small class="price-label">Price: RM6.99</small>
+                            <button class="btn btn-remove" type="button">Remove</button>
+                        </div>
+                    </div>
+                </td>
+                <td><input class="cart-quantity-input" type="number" min="0" max="9" value="0"></td>
+                <td class="item-price">RM00.00</td>
+            </tr><tr class="cart-row">
+                <td>
+                    <div class="cart-item">
+                        <img src="../img/panna cotta.jpg" alt="panna cotta" />
+                        <div id="item11">
+                            <p>Panna Cotta</p>
+                            <small class="price-label">Price: RM6.99</small>
+                            <button class="btn btn-remove" type="button">Remove</button>
+                        </div>
+                    </div>
+                </td>
+                <td><input class="cart-quantity-input" type="number" min="0" max="9" value="0"></td>
+                <td class="item-price">RM00.00</td>
+            </tr><tr class="cart-row">
+                <td>
+                    <div class="cart-item">
+                        <img src="../img/arabic coffee.jpg" alt="arabic coffee" />
+                        <div id="item12">
+                            <p>Arabic</p>
+                            <small class="price-label">Price: RM6.99</small>
+                            <button class="btn btn-remove" type="button">Remove</button>
+                        </div>
+                    </div>
+                </td>
+                <td><input class="cart-quantity-input" type="number" min="0" max="9" value="0"></td>
+                <td class="item-price">RM00.00</td>
+            </tr><tr class="cart-row">
+                <td>
+                    <div class="cart-item">
+                        <img src="../img/italian coffee.jpg" alt="italian coffee" />
+                        <div id="item13">
+                            <p>Italian</p>
+                            <small class="price-label">Price: RM6.99</small>
+                            <button class="btn btn-remove" type="button">Remove</button>
+                        </div>
+                    </div>
+                </td>
+                <td><input class="cart-quantity-input" type="number" min="0" max="9" value="0"></td>
+                <td class="item-price">RM00.00</td>
+            </tr><tr class="cart-row">
+                <td>
+                    <div class="cart-item">
+                        <img src="../img/vanilla latte.png" alt="vanilla latte" />
+                        <div id="item14">
+                            <p>Vanilla Latte</p>
+                            <small class="price-label">Price: RM6.99</small>
+                            <button class="btn btn-remove" type="button">Remove</button>
+                        </div>
+                    </div>
+                </td>
+                <td><input class="cart-quantity-input" type="number" min="0" max="9" value="0"></td>
+                <td class="item-price">RM00.00</td>
+            </tr><tr class="cart-row">
+                <td>
+                    <div class="cart-item">
+                        <img src="../img/milk punch.jpg" alt="milk punch" />
+                        <div id="item15">
+                            <p>Milk Punch</p>
+                            <small class="price-label">Price: RM6.99</small>
+                            <button class="btn btn-remove" type="button">Remove</button>
+                        </div>
+                    </div>
+                </td>
+                <td><input class="cart-quantity-input" type="number" min="0" max="9" value="0"></td>
+                <td class="item-price">RM00.00</td>
+            </tr>
+            <tr class="cart-row">
+                <td>
+                    <div class="cart-item">
+                        <img src="../img/Amaretto hot chocolate.png" alt="Amaretto hot chocolate" />
+                        <div id="item16">
+                            <p>Amaretto</p>
+                            <small class="price-label">Price: RM6.99</small>
+                            <button class="btn btn-remove" type="button">Remove</button>
+                        </div>
+                    </div>
+                </td>
+                <td><input class="cart-quantity-input" type="number" min="0" max="9" value="0"></td>
+                <td class="item-price">RM00.00</td>
+            </tr>
+            <tr class="cart-row">
+                <td>
+                    <div class="cart-item">
+                        <img src="../img/bicerin coffee.jpg" alt="bicerin coffee" />
+                        <div id="item17">
+                            <p>Bicerin</p>
+                            <small class="price-label">Price: RM6.99</small>
+                            <button class="btn btn-remove" type="button">Remove</button>
+                        </div>
+                    </div>
+                </td>
+                <td><input class="cart-quantity-input" type="number" min="0" max="9" value="0"></td>
+                <td class="item-price">RM00.00</td>
+            </tr>
+            <tr class="cart-row">
+                <td>
+                    <div class="cart-item">
+                        <img src="../img/Frozen Mudslide.jpg" alt="Frozen Mudslide" />
+                        <div id="item18">
+                            <p>Frozen Mudslide</p>
+                            <small class="price-label">Price: RM6.99</small>
+                            <button class="btn btn-remove" type="button">Remove</button>
+                        </div>
+                    </div>
+                </td>
+                <td><input class="cart-quantity-input" type="number" min="0" max="9" value="0"></td>
+                <td class="item-price">RM00.00</td>
+            </tr>
+            <tr class="cart-row">
+                <td>
+                    <div class="cart-item">
+                        <img src="../img/Caramel Iced Latte.jpg" alt="Caramel Iced Latte" />
+                        <div id="item19">
+                            <p>Caramel Iced Latte</p>
+                            <small class="price-label">Price: RM6.99</small>
+                            <button class="btn btn-remove" type="button">Remove</button>
+                        </div>
+                    </div>
+                </td>
+                <td><input class="cart-quantity-input" type="number" min="0" max="9" value="0"></td>
+                <td class="item-price">RM00.00</td>
+            </tr>
+            <tr class="cart-row">
+                <td>
+                    <div class="cart-item">
+                        <img src="../img/Biscoff Cloud Coffee.jpg" alt="Biscoff Cloud Coffee" />
+                        <div id="item20">
+                            <p>Biscoff Cloud Coffee</p>
+                            <small class="price-label">Price: RM6.99</small>
+                            <button class="btn btn-remove" type="button">Remove</button>
+                        </div>
+                    </div>
+                </td>
+                <td><input class="cart-quantity-input" type="number" min="0" max="9" value="0"></td>
+                <td class="item-price">RM00.00</td>
+            </tr>
+            <tr class="cart-row">
+                <td>
+                    <div class="cart-item">
+                        <img src="../img/Maple Dalgona Coffee.jpg" alt="Maple Dalgona Coffee" />
+                        <div id="item21">
+                            <p>Maple Dalgona Coffee</p>
+                            <small class="price-label">Price: RM6.99</small>
+                            <button class="btn btn-remove" type="button">Remove</button>
+                        </div>
+                    </div>
+                </td>
+                <td><input class="cart-quantity-input" type="number" min="0" max="9" value="0"></td>
+                <td class="item-price">RM00.00</td>
+            </tr>
+            <tr class="cart-row">
+                <td>
+                    <div class="cart-item">
+                        <img src="../img/latte.jpg" alt="latte" />
+                        <div id="item22">
+                            <p>Latte</p>
+                            <small class="price-label">Price: RM6.99</small>
+                            <button class="btn btn-remove" type="button">Remove</button>
+                        </div>
+                    </div>
+                </td>
+                <td><input class="cart-quantity-input" type="number" min="0" max="9" value="0"></td>
+                <td class="item-price">RM00.00</td>
+            </tr>
+            <tr class="cart-row">
+                <td>
+                    <div class="cart-item">
+                        <img src="../img/mocha.png" alt="mocha" />
+                        <div id="item23">
+                            <p>Mocha</p>
+                            <small class="price-label">Price: RM6.99</small>
+                            <button class="btn btn-remove" type="button">Remove</button>
+                        </div>
+                    </div>
+                </td>
+                <td><input class="cart-quantity-input" type="number" min="0" max="9" value="0"></td>
+                <td class="item-price">RM00.00</td>
+            </tr>
+            <tr class="cart-row">
+                <td>
+                    <div class="cart-item">
+                        <img src="../img/white chocolate.jpg" alt="white chocolate" />
+                        <div id="item24">
+                            <p>White Chocolate</p>
+                            <small class="price-label">Price: RM6.99</small>
+                            <button class="btn btn-remove" type="button">Remove</button>
+                        </div>
+                    </div>
+                </td>
+                <td><input class="cart-quantity-input" type="number" min="0" max="9" value="0"></td>
+                <td class="item-price">RM00.00</td>
+            </tr>
+            <tr class="cart-row">
+                <td>
+                    <div class="cart-item">
+                        <img src="../img/Matcha Latte.jpg" alt="Matcha Latte" />
+                        <div id="item25">
+                            <p>Matcha Latte</p>
+                            <small class="price-label">Price: RM6.99</small>
+                            <button class="btn btn-remove" type="button">Remove</button>
+                        </div>
+                    </div>
+                </td>
+                <td><input class="cart-quantity-input" type="number" min="0" max="9" value="0"></td>
+                <td class="item-price">RM00.00</td>
+            </tr>
+            <tr class="cart-row">
+                <td>
+                    <div class="cart-item">
+                        <img src="../img/red eye.jpg" alt="red eye" />
+                        <div id="item26">
+                            <p>Red Eye</p>
+                            <small class="price-label">Price: RM6.99</small>
+                            <button class="btn btn-remove" type="button">Remove</button>
+                        </div>
+                    </div>
+                </td>
+                <td><input class="cart-quantity-input" type="number" min="0" max="9" value="0"></td>
+                <td class="item-price">RM00.00</td>
+            </tr>
+            <tr class="cart-row">
+                <td>
+                    <div class="cart-item">
+                        <img src="../img/Chai Latte.jpg" alt="Chai Latte" />
+                        <div id="item24">
+                            <p>Chai Latte   </p>
+                            <small class="price-label">Price: RM6.99</small>
+                            <button class="btn btn-remove" type="button">Remove</button>
+                        </div>
+                    </div>
+                </td>
+                <td><input class="cart-quantity-input" type="number" min="0" max="9" value="0"></td>
+                <td class="item-price">RM00.00</td>
+            </tr>
+        </table>
+        <div class="cart-total-price">
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td id="subtotal-price">RM00.00</td>
+                </tr>
+                <tr>
+                    <td>Tax (6% SST)</td>
+                    <td id="tax">RM00.00</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td id="total-price">RM00.00</td>
+                </tr>
+            </table>
+            <a href="../html/payment.html">
+                <button class="btn btn-checkout">Checkout</button>
+            </a>
+        </div>
+    </div> <!--https://www.youtube.com/watch?v=oXrlgOEiy6o-->
+ 
+    <footer>
+        © 2022 Copyright belongs to:
+        <a href="../html/index.html">JavaBeans</a>
+    </footer>
+ 
+</body>
+</html>
+ 

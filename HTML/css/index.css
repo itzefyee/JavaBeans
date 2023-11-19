@@ -1,0 +1,153 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: OpenSans-Regular;
+    src: url(../fonts/OpenSans-Regular.ttf) format('ttf'),
+        url(../fonts/OpenSans-Regular.woff) format('woff');
+}
+
+@font-face {
+    font-family: UnicaOne-Regular;
+    src: url(../fonts/UnicaOne-Regular.ttf) format('ttf'),
+        url(../fonts/UnicaOne-Regular.woff) format('woff');
+}
+
+@font-face {
+    font-family: RedHatDisplay-Regular;
+    src: url(../fonts/RedHatDisplay-Regular.ttf) format('ttf'),
+        url(../fonts/RedHatDisplay-Regular.woff) format('woff');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-image: url(../img/marble6.jpg);
+    position: relative;
+    min-height: 100%;
+}
+
+.container {
+    border: 1px hidden;
+}
+
+body {
+    font-family: RedHatDisplay-Regular, Arial, sans-serif;
+    margin: 0 0 30px 0;
+
+    min-width: 320px;
+    width: 100%;
+}
+
+/*navigation style*/
+header {
+    background-color: white;
+    color: black;
+    width: 100%;
+}
+
+nav {
+    padding: 5px 0px;
+    width: 100%;
+
+    border: 1px hidden;
+    box-shadow: 1px 1px 10px grey;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav li:first-child {
+    margin-left: 20px;
+}
+
+ul li:nth-child(5) {
+    margin-left: auto;
+}
+
+
+nav a {
+    color: black;
+    font-size: 1.7em;
+    font-family: UnicaOne-Regular, Arial, sans-serif;
+    letter-spacing: 2px;
+
+    text-decoration: none;
+    padding: 0px 23px;
+}
+
+nav a:hover,
+nav a:active {
+    text-decoration: underline;
+}
+
+nav img {
+    width: 40px;
+}
+
+/*footer style*/
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 20px;
+    padding-top: 0px;
+
+    width: 100%;
+    background-color: white;
+
+    color: black;
+    text-align: center;
+    font-size: 0.8em;
+    font-family: OpenSans-Regular, Arial, sans-serif;
+
+    border: 1px hidden;
+    box-shadow: 1px 1px 15px grey;
+
+    overflow: hidden;
+}
+
+footer a {
+    color: darkblue;
+}
+
+footer a:hover {
+    color: darkslateblue;
+}
+
+/* ===============================
+   Mobile Styles: 0px to 640px 
+   ===============================
+*/
+@media only screen and (max-width: 640px) {
+    nav a {
+        font-size: 1.6em;
+        padding: 0 12px;
+    }
+
+    ul li:first-child {
+        margin-left: 0px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    nav a {
+        font-size: 1.55em;
+        letter-spacing: -1px;
+        padding: 0 8px;
+    }
+
+    nav img {
+        width: 35px;
+    }
+}

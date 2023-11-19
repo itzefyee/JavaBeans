@@ -1,0 +1,43 @@
+.sidenav {
+    float: left;
+    width: 20%;
+    margin-top: 105px;
+    margin-left: 20px;
+    height: 100%;
+}
+
+.sidenav {
+    border-top: 3px outset grey;
+    border-right: 3px outset grey;
+    border-bottom: 3px outset grey;
+    border-left: 3px outset grey;
+}
+
+.sidenav ul{
+    list-style-type: none;
+    margin: 0;
+    padding-left: 15px;
+    width: auto;
+    font-size: 1.5em;
+    font-weight: normal;
+}
+ 
+.sidenav > li{
+    display: block;
+    text-align: center;
+    margin: 10px 10px 10px 10px;
+}
+ 
+.sidenav a:link{
+    color: black;
+    text-decoration: none;
+}
+ 
+.sidenav a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+.sidenav a:hover{
+    color: cornflowerblue;
+}

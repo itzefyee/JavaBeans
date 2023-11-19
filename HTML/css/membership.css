@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+fieldset{
+    background-color: rgba(33, 37, 78, 0.868);
+    color: white;
+    border-radius: 30px;
+    width: 45%;
+    margin: 15px auto;
+    line-height: 3em;
+    font-family: Arial;
+    font-size: 1.25em;
+    min-width:701px ;
+}
+
+legend {
+color: rgb(62, 32, 115);
+font-size: 2em;
+font-family: sans-serif;
+background-color: rgba(255, 255, 255, 0.705);
+border-radius: 10px;
+}
+
+input{
+    margin: 3px;
+    border-radius: 3px;
+    height: 30px;
+}
+
+div#fName{
+float:right;
+padding-right:2em;
+}
+
+textarea{
+width:650px;
+height: 100px;
+}
+
+select:focus, input:focus,  textarea:focus{
+    transition: 0.2s;
+    background-color: rgba(255, 245, 245, 0.705);
+}
+
+input#icNumber:valid ,input#postCode:valid ,input#phoneNumber:valid ,input#iEmail:valid{
+outline-color: rgb(183, 208, 147);
+}
+
+input#icNumber:focus:invalid ,input#postCode:focus:invalid ,input#phoneNumber:focus:invalid ,input#iEmail:focus:invalid{
+    outline-color: rgb(229, 31, 31);
+}

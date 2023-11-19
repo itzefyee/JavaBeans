@@ -1,0 +1,122 @@
+body {
+  font-family: OpenSans-Regular, Arial, sans-serif;
+}
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*order placed card*/
+.card {
+    width: 400px;
+    background-color: white;
+    color: hsl(224, 23%, 55%);
+    margin: 50px auto 90px auto;
+    overflow: hidden;
+ 
+    border: hidden;
+    border-radius: 30px;
+    box-shadow: 0px 0px 15px grey;
+}
+ 
+.title {
+    color: darkblue;
+    font-weight: 900;
+    font-size: 20px;
+}
+ 
+.yay-image {
+    display: block;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+ 
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 30px;
+    font-size: 16px;
+}
+ 
+.ordermethod-container {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    gap: 15px;
+}
+ 
+.container > * {
+    margin: 10px 0;
+}
+ 
+.container strong {
+    color: hsl(223, 47%, 23%);
+}
+ 
+.ordertype-container {
+    font-size: 16px;
+    padding: 5px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
+.ordertype-container > p {
+    color: grey;
+}
+ 
+.ordertype-container img {
+    height: 60px;
+}
+ 
+.vertical-border {
+    border-left: 2px solid hsl(244, 83%, 68%);
+    border-radius: 10px;
+    margin-top: 10px;
+    height: 140px;
+}
+ 
+.location {
+    margin-left: auto;
+    margin-right: 20px;
+}
+ 
+.location, .location a {
+    color: darkblue;
+}
+ 
+.location a:hover {
+    color: darkslateblue;
+}
+ 
+button {
+    width: 100%;
+    border: none;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+ 
+.reorder-button {
+    background-color: hsl(245, 75%, 52%);
+    padding: 16px 0;
+    color: white;
+    box-shadow: 0 20px 30px -8px rgb(197 189 245);
+}
+ 
+.reorder-button:hover {
+    background-color: hsl(244, 83%, 68%);
+}
+
+/* ===============================
+   Mobile Styles: 0px to 640px
+   ===============================
+*/

@@ -1,0 +1,167 @@
+body {
+    font-family: OpenSans-Regular, Arial, sans-serif;
+}
+
+/*cart items */
+.cart-page {
+    margin: 0px auto 80px auto;
+    max-width: 900px;
+    width: 100%;
+}
+
+.cart-page>p {
+    font-size: 36px;
+    font-family: UnicaOne-Regular, Arial, sans-serif;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+i.fa-shopping-basket {
+    font-size: 26px;
+}
+
+.cart-table {
+    width: 100%;
+    box-sizing: border-box;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cart-item {
+    display: flex;
+    flex-wrap: row wrap;
+}
+
+th {
+    text-align: left;
+    padding: 5px 15px;
+    color: white;
+    background-color: rgb(148, 78, 53);
+    font-weight: normal;
+}
+
+td {
+    padding: 10px 2px;
+}
+
+td input {
+    width: 40px;
+    height: 25px;
+    margin: 20px;
+    padding: 3px;
+}
+
+td.item-price {
+    padding-right: 8px;
+}
+
+.btn-remove,
+.btn-remove:hover {
+    color: rgb(160, 96, 70);
+    background: transparent;
+    border: hidden;
+
+    display: flex;
+    flex: column wrap;
+    margin-left: -4px;
+
+    font-size: 12px;
+    font-weight: 550;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+td img {
+    width: 90px;
+    height: 90px;
+    margin-right: 15px;
+}
+
+
+/*total price */
+.cart-total-price {
+    width: 100%;
+}
+
+.cart-total-price table {
+    width: 100%;
+    min-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 3px solid rgb(148, 78, 53);
+}
+
+th:last-child,
+td:last-child {
+    text-align: right;
+}
+
+
+/*checkout button*/
+.btn-checkout {
+    float: right;
+    margin-top: 10px;
+
+    padding: 2px 90px;
+    border: none;
+    border-radius: 10px;
+
+    background-color: rgb(148, 78, 53);
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn-checkout:hover {
+    background-color: rgb(97, 45, 24);
+}
+
+/* ===============================
+   Mobile Styles: 0px to 640px 
+   ===============================
+*/
+
+@media only screen and (max-width: 640px) {
+
+    .cart-table,
+    .cart-total-price table {
+        width: 90%;
+    }
+
+    .btn-checkout {
+        margin-right: 25px;
+    }
+
+    .row {
+        text-align: center;
+    }
+
+    .col-2,
+    .col-3,
+    .col-4 {
+        flex-basis: 100%;
+    }
+
+    .single-product .row {
+        text-align: left;
+    }
+
+    .single-product .col-2 {
+        padding: 20px 0;
+    }
+
+    .single-product h1 {
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+    .cart-info p {
+        display: none;
+    }
+
+    td input {
+        width: 35px;
+        height: 25px;
+    }
+}

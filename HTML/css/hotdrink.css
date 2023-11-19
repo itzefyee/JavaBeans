@@ -1,0 +1,78 @@
+@charset "utf-8";
+ 
+
+ 
+/*two different columns*/
+
+ 
+.menu{
+    width: auto;
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+ 
+
+ 
+#back{
+    font-size: 1.4em;
+    font-weight: bold;
+}
+ 
+/*Items*/
+.hotDrinks{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+ 
+#coffee{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    width: 200px;
+    margin-bottom: 20px;
+}
+ 
+#price{
+    color: grey;
+    font-size: 20px;
+}
+ 
+button{
+    border: none;
+    outline: 0;
+    padding: 15px;
+    color: white;
+    background: black;
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+    cursor: pointer;
+    border-bottom-left-radius: 20px;
+    border-end-end-radius: 20px;
+}
+ 
+button:hover{
+    opacity: 0.6;
+}
+ 
+.sidenav h1{
+    padding-left: 15px;
+}
+ 
+.menu img{
+    border-radius: 15px;
+    height: 150px;
+    width: 150px;
+    margin: 15px 15px 15px 15px;
+}
+ 
+.sidenav {
+    border-right: 3px outset grey;
+    
+}
+
